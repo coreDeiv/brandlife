@@ -3,6 +3,7 @@
   padding: 0;
   font-size: 16px; // 1rem
   font-display: swap;
+  font-family: "Montserrat", sans-serif, serif;
 }
 
 body, 
@@ -26,7 +27,7 @@ body {
   /* Let's get this party started */
   &::-webkit-scrollbar {
     width: 10px;
-    background: $primary-color;
+    // background: $primary-color;
   }
 
   /* Track */
@@ -50,11 +51,11 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $futura;
+  // font-family: $futura;
 }
 
 p, span, a, blockquote, abbr, address {
-  font-family: $montserrat;
+  // font-family: $montserrat;
 }
 
 input, button, img {
