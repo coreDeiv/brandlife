@@ -1,0 +1,104 @@
+.pufi {
+  position: relative;
+  &-header { 
+    display: block; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  &-container {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem 0;
+    margin: 0 auto;
+  }
+  &-brand {
+    width: auto;
+    margin-top: 1rem;
+  }
+  &-menu {
+    ul {
+      display: flex;
+      justify-self: center;
+      align-items: center;
+      list-style: none;
+      margin-top: 1rem;
+      li {
+        position: relative;
+        margin: 0 .5rem;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: -.5rem;
+          border-right: 1px solid rgba($white, .5);
+        }
+        &:last-child::before {
+          display: none;
+        }
+        a {
+          padding: 0 1rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-decoration: none;
+          opacity: .75;
+          transition: ease .3s all;
+          i, svg, span { color: $white; }
+          svg, i {
+            font-size: 2rem;
+          }
+          span {
+            margin: .5rem 0;
+            text-transform: uppercase;
+          }
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  &-acount {
+    &_item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      button {
+        @extend %reset-button;
+        padding: 1rem;
+        margin: .5rem .5rem;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        span {
+          font-size: .75em;
+          letter-spacing: 1px;
+        }
+        span, svg, i { color: $white; }
+        svg, i {
+          margin: 0 1rem;
+        }
+        &:first-child {
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: -1px;
+            height: calc(100% - 25px);
+            margin: auto 0;
+            border-left: .015rem solid $white;
+          }
+        }
+      }
+    }
+  }
+}
