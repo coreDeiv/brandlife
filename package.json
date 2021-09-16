@@ -1,0 +1,19 @@
+{
+  "name": "brandlife",
+  "version": "1.0.0",
+  "description": "Pufi Landing Page",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coreDeiv/brandlife.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coreDeiv/brandlife/issues"
+  },
+  "homepage": "https://github.com/coreDeiv/brandlife#readme"
+}
