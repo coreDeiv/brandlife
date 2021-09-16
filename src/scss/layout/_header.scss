@@ -1,11 +1,16 @@
-.pufi {
+header {
+  z-index: 10;
   position: relative;
+}
+
+.pufi {
   &-header { 
     display: block; 
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
+    right: 0;    
+	  padding: 0 0 0 2rem;
   }
   &-container {
     width: 100%;
@@ -49,6 +54,7 @@
           text-decoration: none;
           opacity: .75;
           transition: ease .3s all;
+          font-weight: bold;
           i, svg, span { color: $white; }
           svg, i {
             font-size: 2rem;

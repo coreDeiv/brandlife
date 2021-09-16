@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "gulp-v3": "^3.12.1",
-    "node-sass": "^4.13.1"
+    "node-sass": "^4.13.1",
+    "slick-carousel": "^1.8.1"
   }
 }
