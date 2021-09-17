@@ -3,12 +3,16 @@
   --pufi-dark-color: #000;
   --pufi-light-color: #fff;
   --pufi-gray-color: #5c5c5c;
+  --pufi-danger-color: #e4002b;
+  --pufi-success-color: #84bd00;
 }
 
 // Colors
-$white:   var(--pufi-light-color)   !default;
-$black:   var(--pufi-dark-color)    !default;
-$gray:    var(--pufi-gray-color)    !default;
+$white:     var(--pufi-light-color)       !default;
+$black:     var(--pufi-dark-color)        !default;
+$gray:      var(--pufi-gray-color)        !default;
+$danger:    var(--pufi-danger-color)      !default;
+$success:   var(--pufi-success-color)     !default;
 
 // Breakpoints
 $breakpoints: (

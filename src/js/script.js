@@ -30,3 +30,37 @@ while (images.children.length > 0) {
 list.forEach((e) => {
   images.appendChild(e);
 });
+
+// Newsletter
+const exp = {
+  email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/
+}
+
+const form = document.getElementById("form--newsletter");
+const inpt = document.querySelectorAll("#form--newsletter .pn-row_form--input input");
+
+const validateForm = (e) => {
+  switch (e.target.name) {
+    case "email-newsletter":
+      if (exp.email.test(e.target.value)) {
+        document.getElementById("pn-row_form--input").classList.remove("pn-row_form--input-error");
+        if (e % 2 == 0) {
+          console.log("Is odd");
+        } else {
+          console.log("Is even");
+        }
+      } else {
+        document.getElementById("pn-row_form--input").classList.add("pn-row_form--input-error");
+      }
+    break;
+  }
+}
+
+inpt.forEach((input) => {
+  input.addEventListener('keyup', validateForm);
+  input.addEventListener('blur', validateForm);
+});
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+});
