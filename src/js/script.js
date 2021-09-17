@@ -64,3 +64,15 @@ inpt.forEach((input) => {
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 });
+
+// Header Mobile
+function toggleSidebarHeader() {
+  document.getElementById("open-menu").addEventListener("click", () => {
+    document.getElementById("pufi-sidebar_mobile").classList.add("active");
+  });
+  document.getElementById("close-menu").addEventListener("click", () => {
+    document.getElementById("pufi-sidebar_mobile").classList.remove("active");
+  });
+}
+
+toggleSidebarHeader();
