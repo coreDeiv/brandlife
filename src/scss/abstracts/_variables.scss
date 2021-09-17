@@ -1,5 +1,12 @@
+// Root
+:root {
+  --pufi-dark-color: #000;
+  --pufi-light-color: #fff;
+}
+
 // Colors
-$white: #fff;
+$white: var(--pufi-light-color);
+$black: var(--pufi-dark-color);
 
 // Breakpoints
 $breakpoints: (

@@ -11,6 +11,26 @@ header {
     left: 0;
     right: 0;    
 	  padding: 0 0 0 2rem;
+    transition: ease .5s all;
+    &.active {
+      background-color: $white;
+      .pufi-container { 
+        padding: 1rem 0; 
+        align-items: center;
+      }
+      .pufi-brand a img {
+        filter: brightness(0);
+        margin-top: 0rem;
+        margin-bottom: .5rem;
+      }
+      .pufi-menu ul li a > i, svg, span {
+        color: $black;
+        fill: $black;
+      }
+      .pufi-acount_item button:first-child::before {
+        border-color: $black;
+      }
+    }
   }
   &-container {
     width: 100%;
@@ -20,10 +40,12 @@ header {
     align-items: flex-start;
     padding: 2rem 0;
     margin: 0 auto;
+    transition: ease .3s all;
   }
   &-brand {
     width: auto;
     margin-top: 1rem;
+    a img { transition: ease .3s all; }
   }
   &-menu {
     ul {
@@ -102,6 +124,7 @@ header {
             height: calc(100% - 25px);
             margin: auto 0;
             border-left: .015rem solid $white;
+            transition: ease .3s all;
           }
         }
       }
