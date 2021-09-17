@@ -4,10 +4,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     &_reverse {
       flex-direction: row-reverse;
-      .ps-box_content .ps-box_desc {
-        left: 100%;
+      .ps-box_content .ps-box_desc::before {
+        left: calc(100% - 10px);
       }
     }
   }
