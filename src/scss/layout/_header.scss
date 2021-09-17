@@ -23,12 +23,18 @@ header {
         margin-top: 0rem;
         margin-bottom: .5rem;
       }
-      .pufi-menu ul li a > i, svg, span {
-        color: $black;
-        fill: $black;
+      .pufi-menu ul li {
+        &::before { border-color: $black;}
+        a > i, svg, span {
+          color: $black;
+          fill: $black;
+        }
       }
-      .pufi-acount_item button:first-child::before {
-        border-color: $black;
+      .pufi-acount_item button {
+        span, i, svg { color: $black; }
+        &:first-child::before {
+          border-color: $black;
+        }
       }
     }
   }
@@ -63,7 +69,7 @@ header {
           top: 0;
           bottom: 0;
           right: -.5rem;
-          border-right: 1px solid rgba($white, .5);
+          border-right: 1px solid rgba(#fff, .5);
         }
         &:last-child::before {
           display: none;
