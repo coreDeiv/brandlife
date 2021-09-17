@@ -152,6 +152,10 @@ header {
   width: 100%;
   height: auto;
   background-color: $white;
+  display: none;
+  @include mq(tablet-md, max) {
+    display: block !important;
+  }
   &-container {
     width: 100%;
     padding: 1rem;

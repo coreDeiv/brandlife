@@ -20,6 +20,9 @@
         width: auto;
         height: auto;
         transform: translate(-50%, -50%);
+        @include mq(tablet-sm, max) {
+          top: 65%;
+        }
         a {
           padding: 20px 50px;
           color: $white;
@@ -27,6 +30,9 @@
           text-transform: uppercase;
           text-decoration: none;
           font-weight: bold;
+          @include mq(phone-xl, max) {
+            padding: 10px 30px;
+          }
         }
       }
     }
