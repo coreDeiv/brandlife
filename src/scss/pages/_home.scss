@@ -1,0 +1,109 @@
+.ps {
+  &-container { display: block; }
+  &-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_reverse {
+      flex-direction: row-reverse;
+      .ps-box_content .ps-box_desc {
+        left: 100%;
+      }
+    }
+  }
+  &-box {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &_btn,
+    &_content {
+      position: relative;
+      .ps-box_header--icon-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: auto;
+        height: auto;
+        transform: translate(-50%, -50%);
+        a {
+          text-decoration: none;
+          color: $white;
+          text-transform: uppercase;
+          padding: 20px 50px;
+          border: 2px solid $white;
+        }
+      }
+    }
+    &_content .ps-box_desc {
+      width: 50%;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -10px;
+        width: 20px;
+        height: 20px;
+        background-color: $white;
+        transform: rotate(45deg);
+      }
+    }
+    &_header {
+      width: 100%;
+      text-align: center;
+      &--icon {
+        width: 25%;
+        margin: 0 auto 2rem auto;
+        img {
+          width: 100%;
+        }
+      }
+      &--title {
+        margin-bottom: 2rem;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          left: 50%;
+          bottom: -2rem;
+          transform: translate(-50%, -50%);
+          width: 100px;
+          border-bottom: 1px solid $black;
+        }
+        h2 {
+          font-size: 2rem;
+          font-weight: 400;
+        }
+      }
+    }
+    &_body {
+      margin-top: 4rem;
+      width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      p {
+        line-height: 1.5rem;
+        color: $gray;
+      }
+    }
+    &_footer {
+      text-align: center;
+      margin: 1rem 0;
+      a {
+        text-decoration: none;
+        color: $black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i, svg {
+          font-size: .75em;
+          margin-right: 1rem;
+          margin-bottom: .150rem;
+        }
+        i, svg, span { color: $gray; }
+      }
+    }
+  }
+}
